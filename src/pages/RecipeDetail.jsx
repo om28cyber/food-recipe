@@ -95,14 +95,7 @@ const RecipeDetail = () => {
                 >
                   {isFavourite() ? 'Remove from Favourites ❤' : 'Add to Favourites ❤'}
                 </button>
-                <a
-                  href={recipe.url || '#'}
-                  target='_blank'
-                  rel='noreferrer'
-                  className='px-3 py-2 rounded-md bg-gray-100 dark:bg-[#071023] text-sm underline'
-                >
-                  View Full Recipe ↗
-                </a>
+               
               </div>
 
               {/* 🟢 Instructions with Show More / Less */}
@@ -127,27 +120,7 @@ const RecipeDetail = () => {
             </div>
 
             <aside className='md:w-1/3 mt-6 md:mt-0'>
-              <div className='p-4 bg-gray-50 dark:bg-[#071023] rounded-lg'>
-                <h4 className='font-semibold mb-2'>Details</h4>
-                <p className='text-sm mb-1'>
-                  <strong>Source:</strong> {recipe.source || 'TheMealDB'}
-                </p>
-                <p className='text-sm mb-1'>
-                  <strong>URL:</strong>{' '}
-                  {recipe.url ? (
-                    <a
-                      href={recipe.url}
-                      target='_blank'
-                      rel='noreferrer'
-                      className='underline break-all'
-                    >
-                      {recipe.url}
-                    </a>
-                  ) : (
-                    '—'
-                  )}
-                </p>
-              </div>
+      
               <Link to='/' className='inline-block mt-4 text-sm underline'>
                 ← Back to search
               </Link>
