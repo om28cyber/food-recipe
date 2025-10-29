@@ -5,6 +5,7 @@ import { HiMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import Button from './Button';
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
