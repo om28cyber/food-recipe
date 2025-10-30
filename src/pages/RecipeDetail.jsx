@@ -94,7 +94,6 @@ const RecipeDetail = () => {
             </button>
           </div>
 
-          {/* 🟢 Instructions with Show More / Less */}
           <h3 className="text-lg font-medium mt-6 mb-2">Instructions</h3>
           <div className="prose max-w-none text-sm whitespace-pre-line">
             {cleanInstructions
@@ -106,21 +105,17 @@ const RecipeDetail = () => {
           </div>
 
           {cleanInstructions.length > 400 && (
-            <div className="mt-3 flex justify-between items-center">
-              <button
-                onClick={() => setShowMore(!showMore)}
-                className="px-4 py-2 bg-green-500 text-white rounded-full text-sm hover:bg-green-600 transition"
-              >
-                {showMore ? 'Show Less' : 'Show More'}
-              </button>
-              <Link
-                to="/"
-                className="text-sm font-medium text-blue-600 hover:underline ml-4"
-              >
-                ← Back to search
-              </Link>
-            </div>
+            <button
+              onClick={() => setShowMore(!showMore)}
+              className="mt-3 px-4 py-2 bg-green-500 text-white rounded-full text-sm hover:bg-green-600 transition"
+            >
+              {showMore ? 'Show Less' : 'Show More'}
+            </button>
           )}
+
+          <Link to="/" className="inline-block mt-6 text-sm underline">
+            ← Back to search
+          </Link>
         </div>
       </div>
     </div>

@@ -48,7 +48,7 @@ const Recipes = () => {
 
   return (
     <div className="w-full">
-      {/* 🔍 Search bar */}
+     
       <div className="w-full flex items-center justify-center pt-10 pb-5 px-0 md:px-10">
         <form className="w-full lg:w-2/4" onSubmit={handleSearch}>
           <Searchbar
@@ -59,7 +59,7 @@ const Recipes = () => {
         </form>
       </div>
 
-      {/* 🧁 Recipes list */}
+     
       {recipes?.length > 0 ? (
         <>
           <div className="w-full flex flex-wrap gap-10 px-0 lg:px-10 py-10 justify-center">
@@ -71,7 +71,7 @@ const Recipes = () => {
             ))}
           </div>
 
-          {/* 🟢 Always show the button if API gives more than 0 results */}
+          
           {allResults.length > 0 && (
             <div className="flex w-full items-center justify-center py-10">
               <Button
