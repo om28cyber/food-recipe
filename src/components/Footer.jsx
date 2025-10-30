@@ -5,14 +5,14 @@ const Footer = () => {
   return (
     <footer className="text-white py-16 bg_gradient mt-auto">
       <div className="container mx-auto px-6 lg:px-20 py-10 flex flex-col gap-10 md:flex-row justify-between border-t border-slate-800">
-        {/* Logo */}
+      
         <div className="flex">
           <p className="font-bold text-center">
             Food<span className="text-green-500 text-xl">Verse</span>
           </p>
         </div>
 
-        {/* Quick Links */}
+    
         <div>
           <p className="font-semibold mb-2">QUICK LINKS</p>
           <div className="flex flex-col text-start">
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Legal */}
+       
         <div>
           <p className="font-semibold mb-2">LEGAL</p>
           <div className="flex flex-col text-start text-[14px]">
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Media */}
+        
         <div className="flex flex-col">
           <p className="font-semibold mb-2">SOCIAL MEDIA</p>
           <div className="flex mt-4 gap-3">
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Text */}
+      
       <div className="flex items-center justify-center py-6 border-t border-slate-700 mt-6">
         <span className="text-gray-400 text-sm">OmTawde </span>
       </div>

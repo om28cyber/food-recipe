@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className="w-full fixed z-10 bg-black opacity-90">
       <nav className="flex w-full py-2 md:py-3 px-4 md:px-20 items-center justify-between">
-        {/* Logo + Brand */}
+        
         <Link
           to="/"
           onClick={() => scroll.scrollToTop()}
@@ -26,21 +26,21 @@ const Navbar = () => {
           Food<span>Verse</span>
         </Link>
 
-        {/* Desktop Menu */}
+      
         <ul className="hidden md:flex text-white gap-6">
           <li>
-            {/* Scroll smoothly to top */}
+           
             <Link to="/" onClick={() => scroll.scrollToTop()}>
               Home
             </Link>
           </li>
           <li>
-            {/* Smooth scroll to recipes section */}
+          
             <ScrollLink
               to="recipes"
               smooth={true}
               duration={600}
-              offset={-80} // adjust based on navbar height
+              offset={-80} 
               className="cursor-pointer"
             >
               Explore
@@ -51,13 +51,13 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Sign-in Button */}
+       
         <Button
           title="Sign in"
           conteinerStyle="hidden md:block bg-transparent border border-white text-white hover:bg-white hover:text-slate-700 rounded-full min-w-[130px]"
         />
 
-        {/* Mobile Menu Button */}
+       
         <button
           className="block md:hidden text-white text-xl"
           onClick={() => setOpen((prev) => !prev)}
@@ -66,7 +66,7 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile Dropdown Menu */}
+     
       <div
         className={`${
           open ? 'flex' : 'hidden'

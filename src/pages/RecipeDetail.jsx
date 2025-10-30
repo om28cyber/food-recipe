@@ -94,7 +94,7 @@ const RecipeDetail = () => {
             </button>
           </div>
 
-          {/* 🟢 Instructions with Show More / Less */}
+         
           <h3 className="text-lg font-medium mt-6 mb-2">Instructions</h3>
           <div className="prose max-w-none text-sm whitespace-pre-line">
             {cleanInstructions

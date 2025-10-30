@@ -24,7 +24,7 @@ const Navbar = () => {
           Food<span>Verse</span>
         </Link>
 
-        {/* Desktop Menu */}
+        
         <ul className="hidden md:flex text-white gap-6">
           <li>
             <Link to="/">Home</Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
+     
       <div
         className={`${
           open ? 'flex' : 'hidden'
